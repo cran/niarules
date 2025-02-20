@@ -28,7 +28,7 @@ build_rule <- function(solution, features) {
 
       if (feat_type != "categorical") {
         border1 <- calculate_border(features[[feature]], solution[vector_position])
-        border2 <- calculate_border(features[[feature]], solution[vector_position+1])
+        border2 <- calculate_border(features[[feature]], solution[vector_position + 1])
 
         if (border1 > border2) {
           temp <- border1
@@ -42,8 +42,7 @@ build_rule <- function(solution, features) {
         } else {
           rules <- add_attribute(rules, feature, feat_type, border1, border2, "EMPTY")
         }
-      } else
-      {
+      } else {
         categories <- features[[feature]]$categories
         selected <- calculate_selected_category(solution[vector_position], length(categories))
 
@@ -141,7 +140,6 @@ calculate_border <- function(feature_info, value) {
   lower_bound <- feature_info$lower_bound
   upper_bound <- feature_info$upper_bound
   result <- value * (upper_bound - lower_bound) + lower_bound
-  #TODO check
   return(result)
 }
 
@@ -159,7 +157,6 @@ calculate_border <- function(feature_info, value) {
 #' selected_category <- calculate_selected_category(0.3, 5)
 #'
 calculate_selected_category <- function(value, num_categories) {
-  # TODO (fix borders in EVOLUTIONARY PROCESS)
   selected <- trunc(round(value * num_categories))
   return(ifelse(selected == 0, 1, selected))
 }

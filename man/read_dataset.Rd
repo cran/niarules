@@ -2,16 +2,24 @@
 % Please edit documentation in R/dataset.R
 \name{read_dataset}
 \alias{read_dataset}
-\title{Read a dataset from a CSV file.}
+\title{Read a CSV Dataset}
 \usage{
-read_dataset(dataset_path)
+read_dataset(
+  dataset_path,
+  timestamp_col = "timestamp",
+  timestamp_formats = c("\%d/\%m/\%Y \%H:\%M:\%S", "\%H:\%M:\%S \%d/\%m/\%Y")
+)
 }
 \arguments{
-\item{dataset_path}{The path to the CSV file.}
+\item{dataset_path}{A string specifying the path to the CSV file.}
+
+\item{timestamp_col}{A string specifying the timestamp column name (default: `"timestamp"`).}
+
+\item{timestamp_formats}{A vector of date-time formats to try for parsing timestamps.}
 }
 \value{
-A data frame representing the dataset.
+A data frame containing the dataset.
 }
 \description{
-This function reads a CSV file and returns the dataset as a data frame.
+Reads a dataset from a CSV file and optionally parses a timestamp column.
 }
