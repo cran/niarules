@@ -2,11 +2,11 @@ Package: niarules
 Type: Package
 Title: Numerical Association Rule Mining using Population-Based
         Nature-Inspired Algorithms
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
-    person("Iztok Jr.", "Fister", role = c("aut", "cre", "cph"),
-	email = "iztok@iztok.space",
-	comment = c(ORCID = "0000-0002-6418-1272")))
+    person("Iztok Jr.", "Fister", role = c("aut", "cre", "cph"), email = "iztok@iztok.space",	comment = c(ORCID = "0000-0002-6418-1272")),
+    person("Gerlinde", "Emsenhuber", role = c("aut"), comment = c(ORCID = "0000-0001-7776-586X")),
+    person("Jan Hendrik", "Plümer", role = c("aut"), comment = c(ORCID = "0009-0000-3722-1702")))
 Classification/ACM: G.4, H.2.8
 Description: Framework is devoted to mining numerical association rules through the
   utilization of nature-inspired algorithms for optimization. Drawing inspiration
@@ -19,13 +19,18 @@ BugReports: https://github.com/firefly-cpp/niarules/issues
 Depends: R (>= 4.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.3.0
-Imports: stats, utils
-Suggests: testthat
-NeedsCompilation: no
-Packaged: 2025-02-20 16:12:49 UTC; iztok
-Author: Iztok Jr. Fister [aut, cre, cph]
-    (<https://orcid.org/0000-0002-6418-1272>)
+RoxygenNote: 7.3.2
+Imports: stats, utils, Rcpp, dplyr, rlang, rgl
+Suggests: testthat, withr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2025-09-08 11:07:12 UTC; iztok
+Author: Iztok Jr. Fister [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6418-1272>),
+  Gerlinde Emsenhuber [aut] (ORCID:
+    <https://orcid.org/0000-0001-7776-586X>),
+  Jan Hendrik Plümer [aut] (ORCID:
+    <https://orcid.org/0009-0000-3722-1702>)
 Maintainer: Iztok Jr. Fister <iztok@iztok.space>
 Repository: CRAN
-Date/Publication: 2025-02-20 17:00:02 UTC
+Date/Publication: 2025-09-08 12:40:07 UTC
