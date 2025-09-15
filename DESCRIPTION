@@ -2,7 +2,7 @@ Package: niarules
 Type: Package
 Title: Numerical Association Rule Mining using Population-Based
         Nature-Inspired Algorithms
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(
     person("Iztok Jr.", "Fister", role = c("aut", "cre", "cph"), email = "iztok@iztok.space",	comment = c(ORCID = "0000-0002-6418-1272")),
     person("Gerlinde", "Emsenhuber", role = c("aut"), comment = c(ORCID = "0000-0001-7776-586X")),
@@ -24,7 +24,7 @@ Imports: stats, utils, Rcpp, dplyr, rlang, rgl
 Suggests: testthat, withr
 LinkingTo: Rcpp
 NeedsCompilation: yes
-Packaged: 2025-09-08 11:07:12 UTC; iztok
+Packaged: 2025-09-14 18:05:05 UTC; iztok
 Author: Iztok Jr. Fister [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-6418-1272>),
   Gerlinde Emsenhuber [aut] (ORCID:
@@ -33,4 +33,4 @@ Author: Iztok Jr. Fister [aut, cre, cph] (ORCID:
     <https://orcid.org/0009-0000-3722-1702>)
 Maintainer: Iztok Jr. Fister <iztok@iztok.space>
 Repository: CRAN
-Date/Publication: 2025-09-08 12:40:07 UTC
+Date/Publication: 2025-09-15 09:10:12 UTC
